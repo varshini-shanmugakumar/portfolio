@@ -1,0 +1,19 @@
+body {
+  background-color: rgb(235, 167, 180);
+}
+
+center {
+  font-weight: bold;
+  color: #dd3855;
+  font-size: 55px;
+}
+
+.hobby-container {
+  margin-left: 21.5cm;
+  font-size: 33px;
+}
+
+.hobby {
+  margin-left: 21.5cm;
+  height: 219px;
+}

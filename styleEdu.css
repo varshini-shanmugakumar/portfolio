@@ -1,0 +1,38 @@
+* {
+  background-color: bisque;
+}
+
+center {
+  font-size: 46px;
+  font-weight: bold;
+  color: #a74444;
+}
+
+.table-class {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 64px;
+  font-size: 39px;
+  color: rgb(108 66 35);
+}
+
+th {
+  font-weight: bold;
+  font-size: 39px;
+  color: chocolate;
+}
+
+.table-class,
+td,
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.image {
+  height: 114px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 27%;
+}

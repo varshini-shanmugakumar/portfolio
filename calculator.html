@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>My Calculator</title>
+
+    <link href="styleCalculator.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="calculatorContainer" id="cal-id">
+      <form name="calculator">
+        <input id="display" type="text" autocomplete="off" />
+
+        <input class="inputs" type="button" value="(" />
+        <input class="inputs" type="button" value=")" />
+        <input id="backspace" type="button" value="&lArr;" />
+        <input id="clear" type="button" value="C" />
+
+        <input class="inputs" type="button" value="7" />
+        <input class="inputs" type="button" value="8" />
+        <input class="inputs" type="button" value="9" />
+        <input class="operators" type="button" value="/" />
+
+        <input class="inputs" type="button" value="4" />
+        <input class="inputs" type="button" value="5" />
+        <input class="inputs" type="button" value="6" />
+        <input class="operators" type="button" value="*" />
+
+        <input class="inputs" type="button" value="1" />
+        <input class="inputs" type="button" value="2" />
+        <input class="inputs" type="button" value="3" />
+        <input class="operators" type="button" value="-" />
+
+        <input class="inputs" type="button" value="." />
+        <input class="inputs" type="button" value="0" />
+        <input id="equal" type="button" value="=" />
+        <input class="operators" type="button" value="+" />
+      </form>
+    </div>
+    <a class="refresh" href="index.html"><h1>RELOAD PAGE</h1></a>
+
+    <br />
+
+    <!-- creating toggle button -->
+    <center>
+      <input
+        type="checkbox"
+        id="switch"
+        class="checkbox"
+        onclick="myFunction()" />
+      <label for="switch" class="toggle">
+        <pre>OFF  ON</pre>
+      </label>
+    </center>
+
+    <br />
+    <center><div id="clock"></div></center>
+
+    <br /><br /><br />
+    <br /><br /><br />
+
+    <div>
+      <textarea
+        id="textarea"
+        rows="4"
+        cols="50"
+        placeholder="Enter here"></textarea>
+    </div>
+
+    <script src="appCalc.js"></script>
+  </body>
+</html>

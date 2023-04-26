@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  background-color: oldlace;
+  font-size: 25px;
+  padding: 22px;
+  height: 100vh;
+  transition: transform 0.2s ease-in;
+  position: absolute;
+}
+
+.sidebar nav {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.sidebar nav li {
+  list-style: none;
+  padding: 25px;
+}
+
+.sidebar nav li a {
+  text-decoration: none;
+  color: saddlebrown;
+}
+
+.main {
+  /* background-color: lemonchiffon; */
+  width: 90vw;
+}
+
+.info-container {
+  /* background-color: rgb(250, 229, 251); */
+  height: 45vh;
+  margin: 149px;
+  width: 70vw;
+  display: flex;
+}
+
+.myPic img {
+  height: 40vh;
+  margin: 17px;
+}
+
+.myInfo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 90px;
+  font-size: 25px;
+}
+
+.Hello {
+  font-size: 80px;
+  font-family: "Satisfy", cursive;
+}
+
+.about {
+  font-family: "Gentium Book Plus", serif;
+}
+
+.moreAbout {
+  font-size: 24px;
+  font-family: "Gentium Book Plus", serif;
+}
+
+.buttons button {
+  margin-top: 24px;
+  border-radius: 9px;
+  font-size: 18px;
+  padding: 10px;
+  color: saddlebrown;
+  background-color: oldlace;
+  cursor: pointer;
+}
+
+.buttons button a {
+  text-decoration: none;
+  color: inherit;
+}
+.buttons button:hover {
+  color: oldlace;
+  background-color: saddlebrown;
+}
+
+.contact-main {
+  background-color: lemonchiffon;
+}
+
+.contact-container {
+  background-color: rgb(250, 229, 251);
+}
+
+.sidebarGo {
+  transform: translate(-443px, 0px);
+  position: absolute;
+}
+
+@media (max-width: 1615px) {
+  /* .sidebar {
+    transform: translate(-443px, 0px);
+    position: absolute;
+  } */
+  .myPic {
+    display: none;
+  }
+}
+
+.hamburger {
+  position: absolute;
+  cursor: pointer;
+  top: 10px;
+  left: 10px;
+}
+
+.cross {
+  margin-left: 178px;
+}
+
+.project-container {
+  padding: 149px;
+  font-family: "Gentium Book Plus", serif;
+  font-size: 1.5em;
+}
+
+.boldit {
+  font-weight: bold;
+}
+
+.project-container h1 {
+  font-family: "Satisfy", cursive;
+  font-size: 2em;
+}
+
+.projectBody {
+  background: url("https://img.freepik.com/free-vector/dried-papyrus-branches-by-wall_53876-115960.jpg?w=826&t=st=1676352179~exp=1676352779~hmac=d346e434b372999e193f6f9e3ffcb8dce77979f9cb87c307f8542a82f7c84bb7");
+  background-size: cover;
+}
+
+.eduBody {
+  background: url("https://img.freepik.com/premium-photo/natural-window-brown-tan-color-shadow-overlay-clean-minimal-light-white-background_365663-485.jpg");
+  background-size: cover;
+}
+
+#eduHeading {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.table-class {
+  /* border: 3px solid darkred; */
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 28px;
+  width: 60%;
+}
+
+td {
+  text-align: center;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+.skillsBody {
+  background-color: lavenderblush;
+}
+
+.skill-container center {
+  font-weight: bold;
+  font-size: 60px;
+  color: #602a03;
+  font-family: "Playfair Display", serif;
+}
+
+.itemList li {
+  list-style: none;
+  font-size: 30px;
+  padding: 37px;
+  margin-left: 18cm;
+  font-family: "Rubik", sans-serif;
+}
+
+.skill-item center {
+  font-size: 33px;
+  font-weight: normal;
+  color: #9b0d0d;
+}
+
+.checked {
+  color: orange;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+
+.worksBody {
+  background-color: #e5e1e1;
+}
+
+.work-info h2 {
+  font-size: 35px;
+  font-family: "Bree Serif", serif;
+}
+
+.work-info {
+  padding: 10px;
+}
+
+.work-info p {
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.work-container {
+  padding: 123px;
+  font-size: 25px;
+}
+
+.hobbiesBody {
+  background-color: rgb(237 221 204);
+}
+
+#centerID {
+  font-weight: bold;
+  color: #030303;
+  font-size: 55px;
+  margin-left: 170px;
+}
+
+.hobby-container {
+  margin-left: 21.5cm;
+  font-size: 33px;
+}
+
+.hobby {
+  margin-left: 21.5cm;
+  height: 219px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row {
+  display: flex;
+  margin-left: 473px;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+
+#calculator {
+  margin: 54px;
+  height: 30vh;
+}
+
+#game {
+  margin: 75px;
+  height: 30vh;
+}
+
+.jsBody {
+  background-color: beige;
+}
+
+.typing-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.typing-container p {
+  font-size: 36px;
+  padding: 0.5rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.input-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 42px;
+  margin-left: 8px;
+  background-color: black;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    background-color: black;
+  }
+  49% {
+    background-color: black;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: black;
+  }
+}

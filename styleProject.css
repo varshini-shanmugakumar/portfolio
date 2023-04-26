@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap");
+
+.boldit {
+  font-weight: bold;
+}
+
+* {
+  background-color: rgb(247 236 215);
+  font-family: "Mulish", sans-serif;
+}
+
+.project-container {
+  padding: 33px;
+}
+
+.heading {
+  font-size: 45px;
+  font-weight: bolder;
+}
+
+img {
+  margin-left: 11cm;
+  height: 12cm;
+}
