@@ -271,12 +271,8 @@ td {
 }
 
 #game {
-  margin: 75px;
+  margin: 53px;
   height: 30vh;
-}
-
-.jsBody {
-  background-color: beige;
 }
 
 .typing-container {
