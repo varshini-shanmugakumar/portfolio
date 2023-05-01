@@ -1,60 +1,157 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
 * {
-  background-color: lemonchiffon;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-.main {
-  background-color: aqua;
-  height: 10px;
-  width: 20px;
-}
-
-.phone img {
-  height: 36px;
-}
-
-.mail img {
-  height: 23px;
-}
-
-.address img {
-  height: 36px;
-}
-
-.linkedin img {
-  height: 36px;
-}
-
-center {
-  font-size: 92px;
-  font-family: "Roboto Slab", serif;
-}
-
-.container {
+.contact {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  background: url("bg.jpg");
+  background-size: cover;
 }
 
-li {
-  list-style: none;
-  font-size: 27px;
-  padding: 31px;
+.contact .content {
+  max-width: 800px;
+  text-align: center;
 }
 
-.phone {
-  height: 23px;
+.contact .content h2 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #3c1f0b;
 }
 
-.mail {
-  height: 23px;
+.contact .content p {
+  font-weight: 300;
+  color: rgb(100 33 33);
 }
 
-.address {
-  height: 23px;
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
 
-.linkedin {
-  height: 23px;
+.container .contactInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .contactInfo .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.container .contactInfo .box .icon {
+  min-width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #d7b9a5;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.container .contactInfo .box .text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #3c1f0b;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+.container .contactInfo .box .text h3 {
+  font-weight: 500;
+  color: #3c1f0b;
+}
+
+.contactForm {
+  width: 40%;
+  padding: 40px;
+  background: #d7b9a5;
+}
+
+.contactForm h2 {
+  font-size: 30px;
+  color: #3c1f0b;
+  font-weight: 500;
+}
+
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #3c1f0b;
+  outline: none;
+  resize: none;
+}
+
+.contactForm .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+  color: #5a3c05;
+  font-size: 12px;
+  transform: translateY(-25px);
+}
+
+.contactForm .inputBox input[type="submit"] {
+  width: 100px;
+  background: #cfb192;
+  color: #3c1f0b;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+@media (max-width: 991px) {
+  .contact {
+    padding: 50px;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .container .contactInfo {
+    margin-bottom: 40px;
+  }
+  .container .contactInfo,
+  .contactForm {
+    width: 100%;
+  }
 }
